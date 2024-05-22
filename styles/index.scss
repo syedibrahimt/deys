@@ -1,0 +1,34 @@
+@import "variables";
+
+@mixin flexSpaceBetween($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  background-color: $backgroundColor;
+}
+
+.head {
+  color: $lightBlack;
+  @include flexSpaceBetween(row);
+  margin: 0 5%;
+  height: 100px;
+  background-color: aqua;
+  #page-title {
+    display: inline;
+  }
+  #link-section {
+    border: 1px solid black;
+    width: 50%;
+    @include flexSpaceBetween(row);
+    .link {
+      text-decoration: none;
+      color: $lightBlack;
+    }
+  }
+  #conact-button {
+  }
+}
