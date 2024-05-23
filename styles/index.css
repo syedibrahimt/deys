@@ -1,5 +1,6 @@
 body {
   background-color: #FFECD6;
+  margin: 0;
 }
 
 .head {
@@ -8,16 +9,14 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0 5%;
+  margin: 2.5% 7.5%;
   height: 100px;
-  background-color: aqua;
 }
 .head #page-title {
   display: inline;
 }
 .head #link-section {
-  border: 1px solid black;
-  width: 50%;
+  width: 30%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -26,4 +25,62 @@ body {
 .head #link-section .link {
   text-decoration: none;
   color: #222222;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.2rem;
+}
+.head #conact-button {
+  background-color: #222222;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+.first {
+  display: flex;
+  margin: 0 7.5%;
+  width: 85%;
+  height: 50vh;
+}
+.first .left {
+  flex: 1;
+  display: inline;
+  text-align: left;
+  align-self: center;
+}
+.first .left .title {
+  font-size: 8rem;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  margin: 0;
+  color: #222222;
+}
+.first .left .description {
+  font-size: 1.5rem;
+  font-family: "Manrope", sans-serif;
+  width: 80%;
+  margin: 0;
+  color: #222222;
+}
+.first .right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first .right img {
+  height: 300px;
+  width: 300px;
+}
+
+.second {
+  background-color: #222222;
+  width: 60%;
+  height: 20vh;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.3);
+}
+.second #trusted-by {
+  color: #FFECD6;
 }/*# sourceMappingURL=index.css.map */

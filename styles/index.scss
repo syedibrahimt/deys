@@ -7,28 +7,87 @@
   align-items: center;
 }
 
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   background-color: $backgroundColor;
+  margin: 0;
 }
 
 .head {
   color: $lightBlack;
   @include flexSpaceBetween(row);
-  margin: 0 5%;
+  margin: 2.5% 7.5%;
   height: 100px;
-  background-color: aqua;
   #page-title {
     display: inline;
   }
   #link-section {
-    border: 1px solid black;
-    width: 50%;
+    width: 30%;
     @include flexSpaceBetween(row);
     .link {
       text-decoration: none;
       color: $lightBlack;
+      font-family: "Manrope", sans-serif;
+      font-size: 1.2rem;
     }
   }
   #conact-button {
+    background-color: $lightBlack;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+  }
+}
+
+.first {
+  display: flex;
+  margin: 0 7.5%;
+  width: 85%;
+  height: 50vh;
+  .left {
+    flex: 1;
+    display: inline;
+    text-align: left;
+    align-self: center;
+    .title {
+      font-size: 8rem;
+      font-family: "Manrope", sans-serif;
+      font-weight: 800;
+      margin: 0;
+      color: $lightBlack;
+    }
+    .description {
+      font-size: 1.5rem;
+      font-family: "Manrope", sans-serif;
+      width: 80%;
+      margin: 0;
+      color: $lightBlack;
+    }
+  }
+  .right {
+    flex: 1;
+    @include flexCenter;
+    img {
+      height: 300px;
+      width: 300px;
+    }
+  }
+}
+
+.second {
+  background-color: $lightBlack;
+  width: 60%;
+  height: 20vh;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  box-shadow: 10px 10px 1px rgb(0 0 0 / 0.3);
+  #trusted-by {
+    color: $backgroundColor;
   }
 }
