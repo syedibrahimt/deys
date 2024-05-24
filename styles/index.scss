@@ -91,3 +91,15 @@ body {
     color: $backgroundColor;
   }
 }
+
+.third {
+  background-color: $lightBlack;
+  width: 60%;
+  height: 40vh;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  box-shadow: 10px 10px 1px rgb(0 0 0 / 0.3);
+  #trusted-by {
+    color: $backgroundColor;
+  }
+}
